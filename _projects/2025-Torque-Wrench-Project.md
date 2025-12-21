@@ -4,6 +4,7 @@ title: Torque Wrench Design
 description: Advanced CAD Project
 technologies: [Autodesk Fusion, MATLAB, ANSYS]
 image: /assets/images/torque-wrench.jpg
+
 ---
 
 
@@ -30,7 +31,7 @@ With these design considerations in mind, I first drew out the parameters and ne
 
 ![Notebook calculations]({{ "/assets/images/Notebook-Materials.jpeg" | relative_url }}){: .inline-image-r style="width: 50%"}
 
----
+---  
 
 ```matlab
     b = 0.6;    h = 0.5;   L = 16;  % Dimensions of wrench (inches)
@@ -79,6 +80,7 @@ With these design considerations in mind, I first drew out the parameters and ne
 ### CAD Drawing
 
 Below is the full drawing of my final CAD model. The critical dimensions for manufacturing and FEM modeling are listed. 
+
 ---
 
 ![Fusion 360 Drawing]({{ "/assets/images/Torque_Wrench_Drawing.jpg" | relative_url }}){: .inline-image-r style="width: 50%"}
@@ -113,3 +115,6 @@ The FEM setup followed the course instructions and is illustrated below:
 Below is the strain distribution along the gauge axis. The peak gauge-direction strain from the probe was 2585.3 microstrain.
 
 ![Normal Elastic Strain FEM]({{ "/assets/images/Normal-Elastic-Strain.png" | relative_url }}){: .inline-image-l}
+
+
+Hey! This is new! Look at me!!!
