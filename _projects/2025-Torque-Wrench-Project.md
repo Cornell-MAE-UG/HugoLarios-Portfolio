@@ -15,15 +15,14 @@ For the final project of MAE 3270: Mechanics of Materials, we were tasked with d
 
 ### Designing the wrench:
 
-When beginning the preliminary design of the torque wrench, we were given the following problem statement:
-
-"Your assignment is to design a non-ratcheting, 3/8 inch drive instrumented torque wrench rated for 600 in-lbf. Torque will be transduced using strain gauges bonded to the outer surfaces of the wrench at high strain locations. I am also asking you to perform a finite element analysis of your final design.
-The torque will be transduced by strain gauges on the sides of the torque wrench. The design goal is to maximize the voltage output of the wrench (mV/V) at the rated torque. The design is required to attain at least 1.0 mV/V output at the rated torque of 600 in-lbf. Higher output will lead to more sensitivity and improved signal to noise ratio. The constrains are that the wrench must not fail due to static loading, crack growth or fatigue. Your design will include selecting an appropriate material and dimensions to meet or exceed the following requirements:
-- 1) Attain at least 1.0 mV/V output at the rated torque of 600 in-lbf.
-- 2) Safety factor of X_0 = 4 for yield or brittle failure.
-- 3) Safety factor of X_k = 2 for crack growth from an assumed crack of depth 0.04 inches (1 mm).
-- 4) Fatigue stress safety factor of X_s = 1.5.
-- 5) Material must be a steel, aluminum, or titanium alloy."
+When beginning the preliminary design of the torque wrench, we were given the following problem statement:  
+"Your assignment is to design a non-ratcheting, 3/8 inch drive instrumented torque wrench rated for 600 in-lbf. Torque will be transduced using strain gauges bonded to the outer surfaces of the wrench at high strain locations. I am also asking you to perform a finite element analysis of your final design.  
+The torque will be transduced by strain gauges on the sides of the torque wrench. The design goal is to maximize the voltage output of the wrench (mV/V) at the rated torque. The design is required to attain at least 1.0 mV/V output at the rated torque of 600 in-lbf. Higher output will lead to more sensitivity and improved signal to noise ratio. The constrains are that the wrench must not fail due to static loading, crack growth or fatigue. Your design will include selecting an appropriate material and dimensions to meet or exceed the following requirements:  
+- 1) Attain at least 1.0 mV/V output at the rated torque of 600 in-lbf.  
+- 2) Safety factor of X_0 = 4 for yield or brittle failure.  
+- 3) Safety factor of X_k = 2 for crack growth from an assumed crack of depth 0.04 inches (1 mm).  
+- 4) Fatigue stress safety factor of X_s = 1.5.  
+- 5) Material must be a steel, aluminum, or titanium alloy."  
 
 With these design considerations in mind, I first drew out the parameters and necessary equations within my notebook, before placing these equations into a MATLAB script. I first tested a steel alloy (M42 Steel), before moving onto a titanium alloy (Ti-6Al-4V).
 
@@ -32,6 +31,7 @@ With these design considerations in mind, I first drew out the parameters and ne
 ![Notebook calculations]({{ "/assets/images/Notebook-Materials.jpeg" | relative_url }}){: .inline-image-r style="width: 50%"}
 
 ---  
+
 
 ```matlab
     b = 0.6;    h = 0.5;   L = 16;  % Dimensions of wrench (inches)
@@ -75,11 +75,12 @@ With these design considerations in mind, I first drew out the parameters and ne
 
 ```
 
+
 ---
 
-### CAD Drawing
+### CAD Drawing  
 
-Below is the full drawing of my final CAD model. The critical dimensions for manufacturing and FEM modeling are listed. 
+Below is the full drawing of my final CAD model. The critical dimensions for manufacturing and FEM modeling are listed.  
 
 ---
 
@@ -89,30 +90,30 @@ Below is the full drawing of my final CAD model. The critical dimensions for man
 
 ### Material & Material Properties
 
-The wrench is fabricated from Ti-6Al-4V, which best fits the material strain requirement.
-The key properties include:
-- Young's Modulus: 16.3*10^6 psi
-- Poisson's Ratio: 0.332
-- Yield Strength: 114 ksi
-- Fracture Toughness: 94.2 ksi*sqrt(in)
-- Fatigue Strength (10^6 Cycles): 88.9 ksi
-- Density: 4.43 g/cm^3 (not structurally relevant but included for completeness)
+The wrench is fabricated from Ti-6Al-4V, which best fits the material strain requirement.  
+The key properties include:  
+- Young's Modulus: 16.3*10^6 psi  
+- Poisson's Ratio: 0.332  
+- Yield Strength: 114 ksi  
+- Fracture Toughness: 94.2 ksi*sqrt(in)  
+- Fatigue Strength (10^6 Cycles): 88.9 ksi  
+- Density: 4.43 g/cm^3 (not structurally relevant but included for completeness)  
 
 ---
 
-### FEM Load and Boundary Condition Diagram
+### FEM Load and Boundary Condition Diagram  
 
-The FEM setup followed the course instructions and is illustrated below:
-- The top 0.4 inches of the drive block was fully constrained (zero displacement, shown in yellow).
-- A lateral force was applied on the wrench to create a net torque around the drive block. This force was F= 600/16 = 37.5 lbf.
+The FEM setup followed the course instructions and is illustrated below:  
+- The top 0.4 inches of the drive block was fully constrained (zero displacement, shown in yellow).  
+- A lateral force was applied on the wrench to create a net torque around the drive block. This force was F= 600/16 = 37.5 lbf.  
 
 ![Force FEM]({{ "/assets/images/Force.png" | relative_url }}){: .inline-image-l}
 
 ---
 
-### Normal Strain Contours (Gauge Direction)
+### Normal Strain Contours (Gauge Direction)  
 
-Below is the strain distribution along the gauge axis. The peak gauge-direction strain from the probe was 2585.3 microstrain.
+Below is the strain distribution along the gauge axis. The peak gauge-direction strain from the probe was 2585.3 microstrain.  
 
 ![Normal Elastic Strain FEM]({{ "/assets/images/Normal-Elastic-Strain.png" | relative_url }}){: .inline-image-l}
 

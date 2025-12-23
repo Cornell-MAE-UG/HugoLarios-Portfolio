@@ -13,4 +13,4 @@ My name is {{ site.name }}, and I am a junior at Cornell University studying mec
 
 My dream is to improve my technical skills and be able to design and build some crazy cool things!
 
-Take a look at <a href="{{ "/projects/" | relative_url }}">my projects</a> and <a href="{{ "/cv/" | relative_url }}">CV</a>.
+Take a look at <a href="{{ "/projects/" | relative_url }}">my projects</a>, <a href="{{ "/cv/" | relative_url }}">my CV</a>, or <a href="{{ "/coursework/" | relative_url }}">my coursework</a>.
