@@ -38,7 +38,6 @@ Aspiring engineering student with a strong foundation in mechanics and propulsio
   - Utilized a MATLAB sizing script and eCalc to determine the best battery, motor, and propeller combination for optimal competition performance.  
   - Designed integration pieces for electronic components in both Fusion 360 and SolidWorks.  
   - Uses soldering and crimping to integrate electronic components within the plane and onto the static thrust rig.  
-    
   *Propulsion Subteam Member (2024-2025)*  
   - Aided in the assembly of both test and competition flight plane.  
   - Integrated a flight controller and electrical system into a handmade glider.  
