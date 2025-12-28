@@ -7,7 +7,18 @@ permalink: /coursework/
 
 ---
 
-# Currently:
+# Junior Year (2025-2026)
+
+**Spring Semester (Current)**
+
+- MAE 3240 Heat Transfer
+- MAE 3780 Mechatronics
+- MAE 4230 Intermediate Fluid Dynamics
+- MAE 4510 Propulsion Aircraft & Rockets
+- PSYCH 2940 Better Decisions
+- HD 3620 Human Bonding
+
+**Fall Semester**
 
 - MAE 3230 Introductory Fluid Mechanics
 - MAE 3260 System Dynamics
@@ -52,7 +63,7 @@ permalink: /coursework/
 **Fall Semester**
 
 - ENGRG 1050 Engineering Seminar
-- ENGRI Intro to Mechanical Engineering
+- ENGRI 1170 Intro to Mechanical Engineering
 - MATH 1910 Calculus for Engineers
 - ENGRG 1091 Collaborative AEW: MATH 1910
 - CHEM 2090 Engineering General Chemistry

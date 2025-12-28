@@ -13,7 +13,7 @@ For the final project of MAE 3270: Mechanics of Materials, we were tasked with d
 
 ---
 
-### Designing the wrench:
+### Problem Statement
 
 When beginning the preliminary design of the torque wrench, we were given the following problem statement:  
 "Your assignment is to design a non-ratcheting, 3/8 inch drive instrumented torque wrench rated for 600 in-lbf. Torque will be transduced using strain gauges bonded to the outer surfaces of the wrench at high strain locations. I am also asking you to perform a finite element analysis of your final design.  
@@ -28,7 +28,7 @@ With these design considerations in mind, I first drew out the parameters and ne
 
 ---
 
-![Notebook calculations]({{ "/assets/images/Notebook-Materials.jpeg" | relative_url }}){: .inline-image-r style="width: 50%"}
+![Notebook calculations]({{ "/assets/images/Notebook-Materials.jpeg" | relative_url }}){: .inline-image-r style="width: 100%"}
 
 ---  
 
@@ -119,3 +119,36 @@ Below is the strain distribution along the gauge axis. The peak gauge-direction 
 
 
 Hey! This is new! Look at me!!!
+
+---
+
+### Maximum Principal Stress Contour  
+
+Maximum principle stress from the FEA was 86.223 ksi with a concentration of stress being found by the driver head.
+
+![Max Principal Stress FEM]({{ "/assets/images/Maximum-Principle-Stress.png" | relative_url }}){: .inline-image-l}
+
+---
+
+### Summary of FEM Structural Results  
+
+## Maximum Normal Stress  
+
+There is a maximum normal stress of 41.472 ksi located at the driver head. This is to be expected, and the stress experienced here is significantly greater than the rest of the torque wrench.
+
+![Normal Stress FEM]({{ "/assets/images/Normal-Stress.png" | relative_url }}){: .inline-image-l}
+
+## Tip Deflection under a 600-lbf load  
+
+The maximum deflection that the torque wrench experiences is 0.58975 inch, which aligns well with the hand calculations.
+
+![Max Deflection FEM]({{ "/assets/images/Max-Displacement.png" | relative_url }}){: .inline-image-l}
+
+---
+
+### Torque Wrench Sensitivity  
+
+---
+
+### Strain Gauge Selection  
+
