@@ -2067,3 +2067,49 @@ float: left;
 width: 60px;
 height: auto;
 }
+
+/* Coursework grid */
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* four columns on large screens */
+  gap: 24px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.coursework-grid .rt-box {
+  text-align: left;
+  min-width: 0;            /* lets long course names wrap instead of stretching the column */
+}
+
+.coursework-grid .rt-box p {
+  overflow-wrap: anywhere; /* wraps long titles like the Physics III one */
+}
+
+/* Medium screens: two rows of two */
+@media (max-width: 1100px) {
+  .coursework-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phones: stack everything */
+@media (max-width: 640px) {
+  .coursework-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.coursework-grid {
+  width: min(1400px, 96vw);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);   /* centers it, ignoring the container's width limit */
+  gap: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.coursework-grid .rt-box p {
+  font-size: 14px;               /* optional: slightly smaller text fits more per line */
+  line-height: 1.6;
+}
